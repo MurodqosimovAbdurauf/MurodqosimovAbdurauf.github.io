@@ -7,9 +7,9 @@
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #f4f6f9;
-      color: #2c3e50;
+      font-family: Arial, sans-serif;
+      background: #f9fbfd;
+      color: #333;
       line-height: 1.6;
     }
 
@@ -19,43 +19,45 @@
       color: #fff;
       padding: 40px 20px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    header img {
+    header h1 {
+      margin: 15px 0 10px;
+      font-size: 2.4rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .profile-img {
       width: 130px;
       height: 130px;
       border-radius: 50%;
       border: 4px solid #fff;
-      margin-bottom: 15px;
       object-fit: cover;
-    }
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin: 0;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
 
     /* Language switch */
     .lang-switch {
       text-align: right;
-      margin: 10px 20px;
+      margin: 10px;
     }
     .lang-switch a {
       margin-left: 10px;
       text-decoration: none;
       font-weight: bold;
-      color: #3498db;
-    }
-    .lang-switch a:hover {
-      color: #1abc9c;
+      color: #2c3e50;
     }
 
     /* Navigation */
     nav {
-      background: #2c3e50;
-      padding: 12px;
+      background: #2980b9;
+      padding: 10px;
       text-align: center;
     }
     nav a {
@@ -63,10 +65,9 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
     }
     nav a:hover {
-      color: #1abc9c;
+      color: #f1c40f;
     }
 
     /* Sections */
@@ -75,34 +76,29 @@
       margin: 30px auto;
       padding: 20px;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #3498db;
+      color: #2c3e50;
       margin-bottom: 15px;
-      border-bottom: 2px solid #1abc9c;
+      border-bottom: 2px solid #3498db;
       display: inline-block;
       padding-bottom: 5px;
-    }
-    p {
-      text-align: center;
     }
 
     /* Skills */
     .skills ul {
       list-style: none;
       padding: 0;
-      text-align: center;
     }
     .skills li {
       background: #3498db;
       color: #fff;
-      padding: 8px 15px;
-      margin: 6px;
+      padding: 8px 12px;
+      margin: 5px;
       display: inline-block;
       border-radius: 20px;
-      font-size: 0.95rem;
     }
 
     /* Projects */
@@ -110,8 +106,7 @@
       margin-bottom: 30px;
     }
     .project h3 {
-      margin-bottom: 10px;
-      color: #2c3e50;
+      margin-bottom: 5px;
     }
     .project img {
       max-width: 100%;
@@ -120,47 +115,21 @@
       margin: 10px 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .project a {
-      display: inline-block;
-      margin-top: 5px;
-      color: #3498db;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .project a:hover {
-      color: #1abc9c;
-    }
 
-    /* Contact */
-    .contact p {
-      margin: 6px 0;
-    }
-    .contact a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* Resume Buttons */
+    /* Resume download buttons */
     button {
       padding: 10px 20px;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
       color: white;
       cursor: pointer;
-      margin: 8px 5px 0 0;
-      font-size: 0.95rem;
+      margin: 5px 0;
     }
     .resume-btn-eng {
       background: #3498db;
     }
     .resume-btn-uzb {
-      background: #2c3e50;
-    }
-    button:hover {
-      opacity: 0.9;
+      background: #2980b9;
     }
 
     /* Footer */
@@ -170,34 +139,24 @@
       color: #fff;
       padding: 15px;
       margin-top: 30px;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      nav a {
-        display: inline-block;
-        margin: 8px;
-      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Language Switch -->
   <div class="lang-switch">
     <a href="index.html">ENG</a> | <a href="index-uz.html">UZB</a>
   </div>
 
+  <!-- Header -->
   <header>
-    <!-- Profil rasmi (images/profile.jpg) -->
-    <img src="images/profile.jpg" alt="Abdurauf Murodqosimov">
+    <img src="images/profile.jpg" alt="Abdurauf Murodqosimov" class="profile-img">
     <h1>👋 Hi, I'm Abdurauf Murodqosimov</h1>
     <p>Junior Software Engineer | Mobile & Web Developer | Robotics Enthusiast</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -206,6 +165,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- About -->
   <section id="about">
     <h2>📖 About Me</h2>
     <p>
@@ -215,6 +175,7 @@
     </p>
   </section>
 
+  <!-- Skills -->
   <section id="skills" class="skills">
     <h2>🛠 Skills</h2>
     <ul>
@@ -230,6 +191,7 @@
     </ul>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
     <h2>🚀 Projects</h2>
     <div class="project">
@@ -247,6 +209,7 @@
     </div>
   </section>
 
+  <!-- Achievements -->
   <section id="achievements">
     <h2>🏆 Achievements</h2>
     <ul>
@@ -256,7 +219,8 @@
     </ul>
   </section>
 
-  <section id="contact" class="contact">
+  <!-- Contact -->
+  <section id="contact">
     <h2>📫 Contact</h2>
     <p>Email: murodqosimovabdurauf2000@gmail.com</p>
     <p>Phone: +998 33 456 20 00</p>
@@ -268,6 +232,7 @@
     <a href="resume_uz.pdf" download><button class="resume-btn-uzb">⬇️ Resume Yuklash (UZB)</button></a>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Abdurauf Murodqosimov | Built with ❤️ using GitHub Pages</p>
   </footer>

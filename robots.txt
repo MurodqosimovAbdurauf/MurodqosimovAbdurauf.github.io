@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://murodqosimovabdurauf.github.io/sitemap.xml

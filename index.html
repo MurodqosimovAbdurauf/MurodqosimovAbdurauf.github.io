@@ -135,7 +135,25 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    /* Resume download buttons */
+    /* Achievement images */
+    .achievement-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .achievement-images div {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+    .achievement-images img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Resume buttons */
     button {
       padding: 10px 20px;
       border: none;
@@ -178,7 +196,7 @@
   <!-- Navigation -->
   <nav>
     <a href="#about">About Me</a>
-    <a href="#personal-info">Personal Information</a>
+    <a href="#personal-info">Personal Info</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#achievements">Achievements</a>
@@ -196,7 +214,7 @@
     </p>
   </section>
 
-  <!-- Personal Information -->
+  <!-- Personal Info -->
   <section id="personal-info">
     <h2>🧾 Personal Information</h2>
     <ul>
@@ -205,21 +223,6 @@
       <li><strong>Middle Name:</strong> Ismoil o‘g‘li</li>
       <li><strong>Date of Birth:</strong> 2000-11-16</li>
     </ul>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
-      <div style="flex: 1; min-width: 250px; text-align: center;">
-        <h3>🇬🇧 English Certificate</h3>
-        <img src="images/english-cert.jpg" alt="English Certificate" style="max-width:100%; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-      </div>
-      <div style="flex: 1; min-width: 250px; text-align: center;">
-        <h3>🐍 Python Udemy Certificate</h3>
-        <img src="images/python-cert.jpg" alt="Python Udemy Certificate" style="max-width:100%; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-      </div>
-      <div style="flex: 1; min-width: 250px; text-align: center;">
-        <h3>🥇 1st Place - Jizzakh</h3>
-        <img src="images/jizzax-award.jpg" alt="Jizzakh Award" style="max-width:100%; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-      </div>
-    </div>
   </section>
 
   <!-- Skills -->
@@ -268,6 +271,21 @@
       <li>Completed Python Masterclass on Udemy.</li>
       <li>B2 English Certificate.</li>
     </ul>
+
+    <div class="achievement-images">
+      <div>
+        <h3>🇬🇧 English Certificate</h3>
+        <img src="images/english-cert.jpg" alt="English Certificate">
+      </div>
+      <div>
+        <h3>🐍 Python Udemy Certificate</h3>
+        <img src="images/python-cert.jpg" alt="Python Udemy Certificate">
+      </div>
+      <div>
+        <h3>🥇 Jizzakh 1st Place</h3>
+        <img src="images/jizzax-award.jpg" alt="Jizzakh Award">
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
